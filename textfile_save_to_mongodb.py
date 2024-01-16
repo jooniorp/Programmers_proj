@@ -201,7 +201,8 @@ def process_text_file(file_path, user_mbti, opponent_mbti):
 
 def save_to_mongodb(my_dict):
     # MongoDB에 연결
-    client = MongoClient("mongodb://localhost:27017/")
+    # 인증이 필요할 때, pymongo.MongoClient("mongodb://사용자이름:비밀번호@localhost:27017/")
+    client = MongoClient("mongodb://ies:6b5@localhost:27017/")
     # 어떤 database, collection에 저장할지 정해야함.
     db = client["test_database"]
     collection = db["test_collection"]
