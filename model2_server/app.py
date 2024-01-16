@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import gradio as gr
 
 # OpenAI API 키 설정
-openai.api_key = "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"
+openai.api_key = "api키"
 
 def convert_text(text, mbti):
     # 여기에 MBTI 스타일로 변환하는 로직을 구현합니다.
