@@ -7,7 +7,7 @@ def read_file(file_path):
     with open(file_path, 'r', encoding='UTF8') as file:
         # 파일의 모든 내용 읽어오기
         text = file.read()
-
+    
     # 텍스트에서 상대방을 찾아 opponent 변수에 할당
     opponent_match = re.search(r'(.+?) 님과 카카오톡 대화', text)
     opponent = opponent_match.group(1).strip() if opponent_match else None
