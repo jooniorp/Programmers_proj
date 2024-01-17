@@ -23,7 +23,7 @@ for document in data_from_mongo:
 df = pd.DataFrame(csv_data)
 df.index.name = 'id'
 
-print(df)
+return df
 
 # CSV 파일로 저장
 # df.to_csv('output.csv', index_label='id')
