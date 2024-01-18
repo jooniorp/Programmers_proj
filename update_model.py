@@ -96,7 +96,7 @@ def check_label_pj(label):
 
 # MongoDB 연결
 def connect_to_mongodb():
-    client = MongoClient("mongodb://ies:6b5@localhost:27017/")
+    client = MongoClient("mongodb://유저아이디:비밀번@localhost:27017/")
     db = client["input_database"]
     collection1 = db["user_chat"]
     collection2 = db['dataset_collection']
