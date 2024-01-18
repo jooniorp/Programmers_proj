@@ -9,8 +9,8 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AdamW
 from sklearn.preprocessing import LabelEncoder
-import pc_input_text_preprocessing as pt
 import save_to_mongodb as stm
+import textfile_to_dict as ttd
 from PIL import Image
 import matplotlib.pyplot as plt
 import re
@@ -214,7 +214,7 @@ def task1(file_path,input_mbti):
     op_cnt=0
     
     #텍스트파일 불러오기
-    my_chat, op_chat = pt.read_file(file_path)
+    my_chat, op_chat = ttd.process_text_file(file_path,input_mbti,None)
   
     #my_chat, 내 채팅으로 mbti출력
     chats = my_detech_text(my_chat)
