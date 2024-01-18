@@ -1,6 +1,0 @@
-pandas
-numpy
-torch
-scikit-learn
-transformers
-gradio==4.14.0

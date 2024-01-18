@@ -9,8 +9,8 @@ from pymongo import MongoClient
 import schedule
 import time
 from datetime import datetime, timedelta
-#import db_to_csv as dtoc
-#import read_last_dataset_db_to_csv as dtocog
+import db_to_csv as dtoc
+import read_last_dataset_db_to_csv as dtocog
 
 update_cycle = 30 #업데이트 주기
 
@@ -94,44 +94,16 @@ def check_label_pj(label):
   else:
     return 1
 
-# MongoDB 연결
-def connect_to_mongodb():
-    client = MongoClient("mongodb://유저아이디:비밀번@localhost:27017/")
-    db = client["input_database"]
-    collection1 = db["user_chat"]
-    collection2 = db['dataset_collection']
-    return collection1, collection2
-
 # MongoDB에서 데이터 가져오기-수정필요
-def get_data_from_mongodb(collection1,collection2):
-  data_from_mongo = collection1.find({})  # 모든 문서를 가져옴
-  # 데이터 가공 및 CSV로 저장
-  csv_data = {'text': [], 'mbti': []}
+df1 = dtoc.db_to_csv()#추가된 데이터셋
+df2 = dtocog.ogcv()#기존 데이터셋
 
-  for document in data_from_mongo:
-    for i, message in enumerate(document['user_chat']):
-      csv_data['text'].append(message)
-      csv_data['mbti'].append(document['user_mbti'].lower())
-  df1 = pd.DataFrame(csv_data)
-  df1.index.name = 'id'
-
-  # 컬렉션에서 데이터 조회
-  cursor = collection2.find()
-  # 조회된 데이터를 리스트로 저장
-  data_list = list(cursor)
-  # 리스트를 데이터프레임으로 변환
-  df2 = pd.DataFrame(data_list)
-  # '_id' 필드를 index로 사용하지 않음
-  df2 = df2.drop('_id', axis=1)  # '_id' 컬럼 삭제
-  df2 = df2.drop('', axis=1)  # '' 컬럼 삭제
-
-  df = pd.concat([df1,df2], axis=0)
-  return df
+df = pd.concat([df1,df2], axis=0)
     
 
-def train_and_update_model(mbti, collection1, collection2):
-  # MongoDB에서 데이터 가져오기
-  rawdata = get_data_from_mongodb(collection1, collection2)#데이터프레임 형태로 가져와야 함
+def train_and_update_model(mbti, df):
+
+  rawdata = df#몽고디비에서 가져온데이터프레임
 
   rawdata['label'] = rawdata['mbti']
 
@@ -158,22 +130,15 @@ def train_and_update_model(mbti, collection1, collection2):
   
   # 현재 날짜와 시간을 가져옵니다.
   current_datetime = datetime.now()
-  # 이전 파라미터가 저장된 날짜를 가져온다.
-  before_datetime = current_datetime - timedelta(days=update_cycle)
+
   # 연,월,일을 문자열로 가져온다.
-  before_date_string = before_datetime.strtime("%Y%m%d")
-  after_date_string = current_datetime.strftime("%Y%m%d")
+  date_string = current_datetime.strftime("%Y%m%d")
   
   #이전의 파라미터가 저장된 경로, 이후의 파라미터가 저장될 경로
-  before_model_save_path = "kc_bert_{}_classifier_{}.pth".format(mbti,before_date_string)
-  after_model_save_path = "kc_bert_{}_classifier_{}.pth".format(mbti,after_date_string)
+  model_save_path = "kc_bert_{}_classifier_{}.pth".format(mbti,date_string)
 
   # 모델 아키텍처 생성
   loaded_model = AutoModelForSequenceClassification.from_pretrained("beomi/kcbert-large", num_labels=2)
-  
-  # 저장된 가중치 불러오기
-  loaded_model.load_state_dict(torch.load(before_model_save_path, map_location=torch.device('cpu')),strict=False)
-  
   tokenizer = AutoTokenizer.from_pretrained("beomi/kcbert-large")#이것도 이전에 학습한 모델 토크나이저로 가져와야됨
 
   max_length = 128
@@ -289,11 +254,9 @@ def train_and_update_model(mbti, collection1, collection2):
 
       print(f"Validation Loss: {val_avg_loss:.4f} - Validation Accuracy: {val_accuracy:.4f}")
 
-  torch.save(loaded_model.state_dict(), after_model_save_path)
+  torch.save(loaded_model.state_dict(),model_save_path)
 
 def main():
-  # MongoDB 연결
-  collection1, collection2 = connect_to_mongodb()
 
   #가중치 업데이트
   train_and_update_model('ie')
@@ -302,10 +265,10 @@ def main():
   train_and_update_model('pj')
 
   # 주기적으로 모델 업데이트를 스케줄링
-  schedule.every(update_cycle).days.do(train_and_update_model, mbti='ie', collection1=collection1, collcetion2=collection2)
-  schedule.every(update_cycle).days.do(train_and_update_model, mbti='ns', collection1=collection1, collcetion2=collection2)
-  schedule.every(update_cycle).days.do(train_and_update_model, mbti='tf', collection1=collection1, collcetion2=collection2)
-  schedule.every(update_cycle).days.do(train_and_update_model, mbti='pj', collection1=collection1, collcetion2=collection2)
+  schedule.every(update_cycle).days.do(train_and_update_model, mbti='ie', df=df)
+  schedule.every(update_cycle).days.do(train_and_update_model, mbti='ns', df=df)
+  schedule.every(update_cycle).days.do(train_and_update_model, mbti='tf', df=df)
+  schedule.every(update_cycle).days.do(train_and_update_model, mbti='pj', df=df)
   
   while True:
     schedule.run_pending()

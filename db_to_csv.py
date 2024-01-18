@@ -7,8 +7,8 @@ def db_to_csv():
     # mongo_uri = 'mongodb://your_mongo_username:your_mongo_password@your_mongo_host:your_mongo_port/your_mongo_db'
     mongo_uri = "mongodb://ies:6b5@localhost:27017/"
     client = MongoClient(mongo_uri)
-    db = client["input_database"]  # 실제 사용하는 MongoDB의 데이터베이스명으로 변경
-    collection = db["user_chat"]  # 실제 사용하는 컬렉션명으로 변경
+    db = client["mbti_database"]  # 실제 사용하는 MongoDB의 데이터베이스명으로 변경
+    collection = db["mbti_collection"]  # 실제 사용하는 컬렉션명으로 변경
     # MongoDB 데이터 가져오기
     data_from_mongo = collection.find({})  # 모든 문서를 가져옴
     
