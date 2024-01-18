@@ -328,6 +328,8 @@ iface2 = gr.Interface(
     inputs=[gr.Textbox(), gr.Dropdown(["INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"], label="MBTI")],
     outputs=gr.Textbox(),
     title="mbti말투별로 바꿔드립니다"
+
+    gr.Markdown("Created by Dev 6-5")
 )
 
 demo = gr.TabbedInterface([iface1, iface2], ["Model1", "Model2"])
