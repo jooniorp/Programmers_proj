@@ -1,8 +1,6 @@
 
 .env
 config.py
-app.py
-app2.py
 data_set\save.png
 flagged
 model1_server
