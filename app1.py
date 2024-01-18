@@ -26,11 +26,17 @@ model_save_path_ns = 'kc_bert_{}_classifier.pth'.format('ns')
 model_save_path_tf = 'kc_bert_{}_classifier.pth'.format('tf')
 model_save_path_pj = 'kc_bert_{}_classifier.pth'.format('pj')
 '''
+file_list = os.listdir('model1_server')
+recent_date = 0
+for file in file_list:
+    if 'kc_bert_ie_classifier' in file:
+        recent_date = max(recent_date, int(file[22:30]))
 
-model_save_path_ie = 'model1_server\kc_bert_ie_classifier_20230115.pth'
-model_save_path_ns = 'model1_server\kc_bert_ns_classifier_20230115.pth'
-model_save_path_tf = 'model1_server\kc_bert_tf_classifier_20230115.pth'
-model_save_path_pj = 'model1_server\kc_bert_pj_classifier.pth'
+
+model_save_path_ie = 'model1_server\kc_bert_ie_classifier_{}.pth'.format(recent_date)
+model_save_path_ns = 'model1_server\kc_bert_ns_classifier_{}.pth'.format(recent_date)
+model_save_path_tf = 'model1_server\kc_bert_tf_classifier_{}.pth'.format(recent_date)
+model_save_path_pj = 'model1_server\kc_bert_pj_classifier_{}.pth'.format(recent_date)
 
 # 모델 아키텍처 생성
 loaded_model_ie = AutoModelForSequenceClassification.from_pretrained("beomi/kcbert-large", num_labels=2)
