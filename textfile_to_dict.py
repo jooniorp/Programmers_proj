@@ -1,5 +1,4 @@
 import re
-from pymongo import MongoClient
 
 def mobile_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     # file_path는 나중에 백엔드 코드에 따라 수정해야될 수 있음
@@ -87,9 +86,7 @@ def mobile_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     user_chat_d = {'user_chat': user_chat, 'user_mbti' : user_mbti}
     opponent_chat_d = {'opponent_chat': opponent_chat, 'opponent_mbti' : opponent_mbti}
 
-    chat_dict = {**user_chat_d, **opponent_chat_d}
-
-    return chat_dict
+    return user_chat_d, opponent_chat_d
 
 
 
@@ -174,9 +171,7 @@ def pc_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     user_chat_d = {'user_chat': user_chat, 'user_mbti' : user_mbti}
     opponent_chat_d = {'opponent_chat': opponent_chat, 'opponent_mbti' : opponent_mbti}
 
-    chat_dict = {**user_chat_d, **opponent_chat_d}
-
-    return chat_dict
+    return user_chat_d, opponent_chat_d
 
 
 
