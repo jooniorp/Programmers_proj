@@ -300,6 +300,7 @@ iface1 = gr.Interface(
 
 with gr.Blocks() as iface1:
     gr.Markdown("당신의 카톡속 mbti는!?")
+    gr.Markdown("카카오톡 텍스트 뽑기 가이드 : https://moonjae.tistory.com/29")
     with gr.Row():
         inp1 = gr.File(type="filepath", label="File Upload")
         inp2 = gr.Dropdown(["INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"], label="MBTI")
@@ -318,6 +319,8 @@ with gr.Blocks() as iface1:
     # 버튼에 이벤트 리스너를 추가한다. 
     # 버튼 클릭시 update함수를 호출하고, inp에 입력된 문자열을 파라미터로 보낸다. 함수의 반환값은 out에 출력한다.
     btn2.click(fn=task1, inputs=[inp1,inp2], outputs=[out1,out2, out3])
+    gr.Markdown("딥러닝 기반 mbti 유추 프로그램 입니다 정확한 mbti는 상대에게 물어보도록 해요!")
+    gr.Markdown("Created by Dev 6-5")
     
 # interface two
 iface2 = gr.Interface(
