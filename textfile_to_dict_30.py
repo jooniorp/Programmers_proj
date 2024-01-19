@@ -1,4 +1,5 @@
 import re
+from pymongo import MongoClient
 
 def mobile_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     # file_path는 나중에 백엔드 코드에 따라 수정해야될 수 있음
@@ -46,7 +47,6 @@ def mobile_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     # 상대방과 사용자 각각의 채팅이 담긴 리스트 생성
     user_chat = []
     opponent_chat = []
-    
 
     for sender, message in matches:
         if url_pattern.search(message): # 링크가 포함된 경우 메시지를 무시하고 다음으로 진행
@@ -75,7 +75,7 @@ def mobile_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
             continue
         elif message == '카카오톡 프로필': # 프로필 공유 무시
             continue
-        
+
         # 상대방과 사용자 각각의 채팅이 담긴 리스트 생성
         if sender != opponent:
             user_chat.append(message)
@@ -86,6 +86,7 @@ def mobile_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     # 모델 입력 데이터프레임 -> 딕셔너리 만들기
     user_chat_d = {'user_chat': user_chat, 'user_mbti' : user_mbti}
     opponent_chat_d = {'opponent_chat': opponent_chat, 'opponent_mbti' : opponent_mbti}
+
 
     return user_chat_d, opponent_chat_d
 
@@ -131,8 +132,6 @@ def pc_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
     # 상대방과 사용자 각각의 채팅이 담긴 리스트 생성
     user_chat = []
     opponent_chat = []
-    temp_chat = ''
-    flag = 'user' if matches[0] != opponent else 'opponent'
 
     for sender, message in matches:
         if url_pattern.search(message): # 링크가 포함된 경우 메시지를 무시하고 다음으로 진행
@@ -161,25 +160,24 @@ def pc_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
             continue
         elif share_contactinfo_pattern.search(message):
             continue
-        
-        # 상대방과 사용자 각각의 채팅이 담긴 리스트 생성
-        if sender != opponent and flag == 'opponent':
-            user_chat.append(temp_chat)
-            temp_chat = ''
-            flag = 'user'
-        elif sender == opponent and flag == 'user':
-            opponent_chat.append(temp_chat)
-            temp_chat = ''
-            flag = 'opponent'
 
-        temp_chat += message
+        # 상대방과 사용자 각각의 채팅이 담긴 리스트 생성
+        if sender != opponent:
+            user_chat.append(message)
+        elif sender == opponent:
+            opponent_chat.append(message)
+
+    user_chat.sort(key=len, reverse=True)
+    opponent_chat.sort(key=len, reverse=True)
+    user_chat = user_chat[:30]
+    opponent_chat = opponent_chat[:30]
 
     print(user_chat)
     print(opponent_chat)
-
     # 모델 입력 데이터프레임 -> 딕셔너리 만들기
     user_chat_d = {'user_chat': user_chat, 'user_mbti' : user_mbti}
     opponent_chat_d = {'opponent_chat': opponent_chat, 'opponent_mbti' : opponent_mbti}
+
 
     return user_chat_d, opponent_chat_d
 
