@@ -11,6 +11,9 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, Adam
 from sklearn.preprocessing import LabelEncoder
 import save_to_mongodb as stm
 import textfile_to_dict as ttd
+import textfile_to_dict2 as ttd2
+import textfile_to_dict_30 as ttd_30
+import textfile_to_dict_all as ttd_all
 from PIL import Image
 import matplotlib.pyplot as plt
 import re
@@ -214,7 +217,11 @@ def task1(file_path,input_mbti):
     op_cnt=0
     
     #텍스트파일 불러오기
-    my_chat, op_chat = ttd.process_text_file(file_path,input_mbti,None)
+    
+    #my_chat, op_chat = ttd.process_text_file(file_path,input_mbti,None)
+    #my_chat, op_chat = ttd2.process_text_file(file_path,input_mbti,None)
+    my_chat, op_chat = ttd_30.process_text_file(file_path,input_mbti,None)
+    #my_chat, op_chat = ttd_all.process_text_file(file_path,input_mbti,None)
   
     #my_chat, 내 채팅으로 mbti출력
     chats = my_detech_text(my_chat)
@@ -317,7 +324,7 @@ with gr.Blocks() as iface1:
         inp2 = gr.Dropdown(["INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"], label="나의 MBTI를 입력하세요")
     
     with gr.Row():
-        btn1=gr.ClearButton()
+        btn1=gr.ClearButton([inp1,inp2])
         btn2=gr.Button("실행")
     
     with gr.Row():

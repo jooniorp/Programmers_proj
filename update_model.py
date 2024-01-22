@@ -30,7 +30,7 @@ class CustomDataset(Dataset):
 
         encoding = self.tokenizer(text, padding='max_length', truncation=True, max_length=self.max_length, return_tensors='pt')
         input_ids = encoding['input_ids'].squeeze()
-        attention_mask = encoding['attention된 파라미터가 저장될 경로
+        attention_mask = encoding['attention된 파라미터가 저장될 경로]
   model_save_path = "kc_bert_{}_classifier_{}.pth".format(mbti,date_string)
 
   # 모델 아키텍처 생성

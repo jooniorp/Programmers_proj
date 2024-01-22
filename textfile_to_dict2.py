@@ -164,11 +164,11 @@ def pc_text_to_dict_from_file(file_path, user_mbti, opponent_mbti):
         
         # 상대방과 사용자 각각의 채팅이 담긴 리스트 생성
         if sender != opponent and flag == 'opponent':
-            user_chat.append(temp_chat)
+            opponent_chat.append(temp_chat)
             temp_chat = ''
             flag = 'user'
         elif sender == opponent and flag == 'user':
-            opponent_chat.append(temp_chat)
+            user_chat.append(temp_chat)
             temp_chat = ''
             flag = 'opponent'
 
