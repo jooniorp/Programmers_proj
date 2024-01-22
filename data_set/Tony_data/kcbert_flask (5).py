@@ -42,14 +42,16 @@ mbti_descriptions = {
     "INTJ": {
         "description" : "전략적이고 논리적인 사고를 가지고 있으며, 명확하고 구체적인 표현을 중시하는 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 괜찮네."},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "날씨 괜찮네요."},
+            {"original": "이번 주말에 뭐할거야?", "rewritten": "주말에 하는거라도?"},
+            {"original": "이번 주말에 뭐하실건가요?", "rewritten": "주말에 할 거 있으세요?"}
         ]
     },
     "INFP": {
         "description" : "이상주의적이고 창의적이고 개인적 가치와 신념을 중시하는 문학소녀 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "오늘 날씨 좋다..."},
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋다..."},
             {"original": "오늘 날씨가 참 좋군요.", "rewritten": "오늘 날씨 좋네요..."},
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "혹시 주말에 뭐하니?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "혹시 주말에 뭐하시나요?"}
@@ -58,8 +60,10 @@ mbti_descriptions = {
     "INFJ": {
         "description" : "타인을 돕고자 하는 강한 동기 부여. 이상주의적이고, 영감을 주는 리더 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 참 좋다."},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "날씨 참 좋네요~"},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐해?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐하세요?"}
         ]
     },
     "ISTP": {
@@ -74,22 +78,28 @@ mbti_descriptions = {
     "ISTJ": {
         "description" : "실용적이고 현실적, 체계적인 조직을 선호. 신뢰성 높고, 세부 사항에 주의를 기울이는 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋구만."},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "날씨 좋은데요?"},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "이번 주말에 뭐할 예정이지?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "이번 주말에 뭐하실 생각인가요?"}
         ]
     },
     "ISFP": {
         "description" : "예술적이고 탐험적인 성향. 현재에 집중하며, 새로운 경험을 추구하는 예술가 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "오늘 날씨 참 좋다~"},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "오늘 날씨가 참 좋네요~"},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "저... 주말에 뭐 해?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "저기 주말에 뭐하시나요?"}
         ]
     },
     "ISFJ": {
         "description" : "친절하고 책임감이 강함. 조화와 협력을 중시하며, 타인의 감정에 민감한 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "오늘 날씨 참 좋네~"},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "오늘 날씨 참 좋아요~"},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "혹시 주말에 뭐 하는거 있니?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "혹시 주말에 뭐 하는거 있으세요?"}
         ]
     },
     "ENTP": {
@@ -104,8 +114,10 @@ mbti_descriptions = {
     "ENTJ": {
         "description" : "목표 지향적이며, 효율성과 생산성을 중시하는 강력한 리더십 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "오늘 날씨 참 좋군."},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "오늘 날씨 참 좋군요."},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 하는거라도 있나?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐 하시는거라도?"}
         ]
     },
     "ENFP": {
@@ -120,8 +132,10 @@ mbti_descriptions = {
     "ENFJ": {
         "description" : "카리스마적이고, 사람들을 동기 부여할 수 있는 능력을 가짐. 타인의 성장과 발전을 도모하는 사회운동가 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "와! 오늘 날씨 좋다!"},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "와! 오늘 날씨 좋네요~!"},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "너 주말에 뭐 할거 있니?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 할거 있으신가요?"}
         ]
     },
     "ESTP": {
@@ -136,8 +150,10 @@ mbti_descriptions = {
     "ESTJ": {
         "description" : "실용적이고 체계적인 조직을 선호, 목표 지향적이며, 규칙과 절차를 중시하는 경영인 스타일",
         "examples": [
-            {"original": "오늘 날씨가 참 좋다.", "rewritten": "날씨 좋네."},
-            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 함?"}
+            {"original": "오늘 날씨가 참 좋다.", "rewritten": "오늘 날씨가 참 좋구만."},
+            {"original": "오늘 날씨가 참 좋군요.", "rewritten": "오늘 날씨 참 좋은데요?"},
+            {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 하나?"},
+            {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐 하는거라도 있나?"}
         ]
     },
     "ESFP": {
