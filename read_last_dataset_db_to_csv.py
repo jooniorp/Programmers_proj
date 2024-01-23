@@ -1,11 +1,19 @@
 from pymongo import MongoClient
 import pandas as pd
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+Mongo_uri=os.getenv('Mongo_uri')
+Mongo_db=os.getenv('Mongo_db')
+Mongo_old_collection=os.getenv('Mongo_old_collection')
 
 def ogcsv():
     # MongoDB에 연결
-    client = MongoClient("mongodb://ies:6b5@localhost:27017/")
-    db = client['input_database']
-    collection = db['dataset_collection']
+    client = MongoClient(Mongo_uri)
+    db = client[Mongo_db]
+    collection = db[Mongo_old_collection]
 
     # 컬렉션에서 데이터 조회
     cursor = collection.find()

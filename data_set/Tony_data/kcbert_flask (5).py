@@ -1,6 +1,13 @@
 from flask import Flask, request, render_template_string
 from markupsafe import Markup  # Markup을 markupsafe에서 가져옵니다.
 import openai
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API=os.getenv('API')
+
 
 app = Flask(__name__)
 previous_requests = []
@@ -177,7 +184,7 @@ mbti_descriptions = {
     # 다른 MBTI 유형에 대한 설명을 여기에 추가하세요.
 }
 # OpenAI API 키 설정
-openai.api_key = "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"
+openai.api_key = API
 
 @app.route('/', methods=['GET', 'POST'])
 def mbti_converter():

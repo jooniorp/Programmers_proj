@@ -1,6 +1,5 @@
 import gradio as gr
 import os
-from dotenv import load_dotenv
 import openai
 import pandas as pd
 import numpy as np
@@ -14,14 +13,10 @@ import textfile_to_dict as ttd
 import textfile_to_dict2 as ttd2
 import textfile_to_dict_30 as ttd_30
 import textfile_to_dict_all as ttd_all
+import model2_function as mf
 from PIL import Image
 import matplotlib.pyplot as plt
 import re
-
-load_dotenv()
-
-API=os.getenv('API')
-openai.api_key = API
 
 # Code for Task 1
 
@@ -300,6 +295,7 @@ def task1(file_path,input_mbti):
     
 # Code for Task 2
 def task2(text, mbti):
+    '''
     # 여기에 MBTI 스타일로 변환하는 로직을 구현합니다.
     # 예: "Please rewrite this in [MBTI] style: [text]"
     prompt = f"'{text}'라는 문장을 {mbti} 스타일로 한글로 재작성해주세요."
@@ -308,7 +304,8 @@ def task2(text, mbti):
         prompt=prompt,
         max_tokens=150
     )
-    return response.choices[0].text.strip()
+    '''
+    return mf.convert_text(text,mbti)
 
 
 # interface one
