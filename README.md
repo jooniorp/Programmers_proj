@@ -71,7 +71,7 @@ ChatGPT는 OpenAI가 개발한 프로토타입 대화형 인공지능 챗봇이�
 ### 프로젝트 개발 환경 및 구조
 
 <p align="center">
-  <img src="./img_mbti/development_process.png" alt="" width="1000"/>
+  <img src="./img_mbti/development_proces.png" alt="" width="1000"/>
 </p>
 
 ### MBTI분류모델
