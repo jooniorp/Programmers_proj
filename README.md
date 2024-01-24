@@ -36,11 +36,10 @@ ChatGPT는 OpenAI가 개발한 프로토타입 대화형 인공지능 챗봇이�
 
 ### 2. 학습데이터
 
-네이버 MBTI 심리 카페 특정 게시판 (사랑방 게시판, 신변 잡기 게시판) 의 게시글 중 닉네임으로부터 MBTI를 유추할 수 있는 데이터 https://github.com/dev-jaemin/Korean-MBTI-Conversation-Dataset?tab=readme-ov-file
-8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, 이모지 제거, null 제거, 중복값 제거
+네이버 MBTI 심리 카페 특정 게시판 (사랑방 게시판, 신변 잡기 게시판) 의 게시글 중 닉네임으로부터 MBTI를 유추할 수 있는 데이터<br/> https://github.com/dev-jaemin/Korean-MBTI-Conversation-Dataset?tab=readme-ov-file<br/>8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, 이모지 제거, null 제거, 중복값 제거
 
-유튜브 MBTI 인사이드 EP.1~EP.6 (MBTI가 다른 16명의 사람들이 4박 5일동안 한 공간에서 생활하는 프로그램) 스크립트 데이터 https://www.youtube.com/watch?v=VxnvTBH8yg4
-8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, null 제거, 중복값 제거
+유튜브 MBTI 인사이드 <br/>EP.1 ~ EP.6 MBTI가 다른 16명의 사람들이 4박 5일동안 한 공간에서 생활하는 프로그램 스크립트 데이터 <br/>https://www.youtube.com/watch?v=VxnvTBH8yg4
+<br/>8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, null 제거, 중복값 제거
 
 MBTI별 카카오톡 오픈 채팅방 채팅 데이터
 8~512자 사이의 데이터만 추출, null 제거, 중복값 제거
