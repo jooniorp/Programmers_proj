@@ -68,19 +68,18 @@ Chat GPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI
 
 ## 디렉토리
 
-[Model training & fine tuning](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/kc_bert_large.py) : Kcbert모델을 MBTI가 태깅된 데이터로 학습 및 파인튜닝
-[app.py](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/app.py) : 모델1,2 통합 웹 서비스 코드
-[textfile_to_dict_30](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/textfile_to_dict_30.py) : 사용자가 업로드한 채팅 텍스트 파일 처리 코드
-[save to mongo](딕셔너리 주소)](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/save_to_mongodb.py) : 입력된 텍스트 데이터를 DB에 저장하는 코드
-[read dataset](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/read_last_dataset_db_to_csv.py) : 모델에 재학습 시킬 데이터를 가져오는 코드
-[update model](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/update_model.py) : 새로운 데이터로 모델 파라미터 업데이트 하는 코드
-
-[Data preprocessing](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/data_preprocessing) : 데이터 전처리 코드 폴더
-[Dataset](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/data_set) : 모델 학습에 쓰인 데이터셋 폴더
-[mbti img](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/img_mbti) : 웹사이트에 나타낼 mbti 이미지 폴더
+[Model training & fine tuning](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/kc_bert_large.py) : Kcbert모델을 MBTI가 태깅된 데이터로 학습 및 파인튜닝<br/>
+[app.py](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/app.py) : 모델1,2 통합 웹 서비스 코드<br/>
+[textfile_to_dict_30](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/textfile_to_dict_30.py) : 사용자가 업로드한 채팅 텍스트 파일 처리 코드<br/>
+[save to mongo](딕셔너리 주소)](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/save_to_mongodb.py) : 입력된 텍스트 데이터를 DB에 저장하는 코드<br/>
+[read dataset](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/read_last_dataset_db_to_csv.py) : 모델에 재학습 시킬 데이터를 가져오는 코드<br/>
+[update model](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/update_model.py) : 새로운 데이터로 모델 파라미터 업데이트 하는 코드<br/>
+[Data preprocessing](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/data_preprocessing) : 데이터 전처리 코드 폴더<br/>
+[Dataset](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/data_set) : 모델 학습에 쓰인 데이터셋 폴더<br/>
+[mbti img](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/img_mbti) : 웹사이트에 나타낼 mbti 이미지 폴더<br/>
 
 
 
 ## 한계점 및 향후 해결방안
 
-Kcbert모델을 파인튜닝함에 있어 MBTI가 제대로 라벨링된 대화 형식의 데이터셋을 구하기 어려워 초기 모델에 대한 정확도가 조금 떨어질 수 있으나, 모델 파라미터를 주기적으로 업데이트 하는 코드를 작성하여 구현함으로 채팅데이터가 점점 쌓이면 더 정확한 분류를 할 수 있음이 기대됨
+Kcbert모델을 파인튜닝함에 있어 MBTI가 제대로 라벨링된 대화 형식의 데이터셋을 구하기 어려워 초기 모델에 대한 정확도가 조금 떨어질 수 있으나,<br/> 모델 파라미터를 주기적으로 업데이트 하는 코드를 작성하여 구현함으로 채팅데이터가 점점 쌓이면 더 정확한 분류를 할 수 있음이 기대됨
