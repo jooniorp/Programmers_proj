@@ -12,19 +12,19 @@
     <td align="center"><img src="./img_mbti/img_istp.png" width="150px;" alt=""></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/jooniorp"><b>박준희</b></td>
-    <td align="center"><a href="https://github.com/ksc1583"><b>김성찬</b></td>
-    <td align="center"><a href="https://github.com/jjkk-story"><b>김정경</b></td>
-    <td align="center"><a href="https://github.com/TonyLee8596"><b>이동기</b></td>
-    <td align="center"><a href="https://github.com/LJMoonCode"><b>이재문</b></td>
-    <td align="center"><a href="https://github.com/jhs36"><b>정희상</b></td>
+    <td align="center"><a href="https://github.com/jooniorp"><b>팀장 박준희</b></td>
+    <td align="center"><a href="https://github.com/ksc1583"><b>팀원 김성찬</b></td>
+    <td align="center"><a href="https://github.com/jjkk-story"><b>팀원 김정경</b></td>
+    <td align="center"><a href="https://github.com/TonyLee8596"><b>팀원 이동기</b></td>
+    <td align="center"><a href="https://github.com/LJMoonCode"><b>팀원 이재문</b></td>
+    <td align="center"><a href="https://github.com/jhs36"><b>팀원 정희상</b></td>
   </tr>
   <tr> 
-    <td align="center">팀장,프로젝트 관리, 모델 테스트 및 서버 백엔드 작업</td>
-    <td align="center">모델구현, 테스트, 웹 서버 배포 및 프론트엔드 작성</td>
-    <td align="center">데이터 전처리, DB관리, ppt작성</td>
+    <td align="center">프로젝트 관리, 모델 테스트 및 백엔드 작업</td>
+    <td align="center">모델구현, 테스트,서버 배포 및 프론트엔드 작성</td>
+    <td align="center">데이터 전처리, DB 관리 및 생성, ppt작성</td>
     <td align="center">모델구현, api관리, 프롬프트 엔지니어링</td>
-    <td align="center">모델학습 및 구현, 테스트</td>
+    <td align="center">모델학습 및 구현, 모델 정확도 테스트</td>
     <td align="center">데이터 전처리, DB관리, 프롬프트 엔지니어링</td>
   </tr>
 
