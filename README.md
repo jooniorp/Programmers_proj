@@ -20,16 +20,17 @@
     <td align="center"><a href="https://github.com/jhs36"><b>정희상</b></td>
   </tr>
   <tr> 
-    <td align="center">팀장,프로젝트 관리</td>
-    <td align="center">모델구현, 테스트</td>
-    <td align="center">데이터 전처리, DB관리</td>
-    <td align="center">모델구현, api관리</td>
-    <td align="center">모델구현,  테스트</td>
-    <td align="center">DB관리, 프롬프트 엔지니어링</td>
+    <td align="center">팀장,프로젝트 관리, 모델 테스트 및 서버 백엔드 작업</td>
+    <td align="center">모델구현, 테스트, 웹 서버 배포 및 프론트엔드 작성</td>
+    <td align="center">데이터 전처리, DB관리, ppt작성</td>
+    <td align="center">모델구현, api관리, 프롬프트 엔지니어링</td>
+    <td align="center">모델학습 및 구현, 테스트</td>
+    <td align="center">데이터 전처리, DB관리, 프롬프트 엔지니어링</td>
   </tr>
 
 </table>
 <br/>
+
 ## 프로젝트 소개
 
 BERT기반 한국어 언어모델인 Kcbert를 활용하여 사용자의 채팅 데이터로 사용자와 상대방의 MBTI를 분류하고, ChatGPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI를 선택하면 그 MBTI말투에 맞게 문장을 재생성해줍니다.
@@ -70,7 +71,7 @@ ChatGPT는 OpenAI가 개발한 프로토타입 대화형 인공지능 챗봇이�
 ### 프로젝트 개발 환경 및 구조
 
 <p align="center">
-  <img src="./images/development_process.png" alt="thumbnail" width="1000"/>
+  <img src="./img_mbti/development_process.png" alt="" width="1000"/>
 </p>
 
 ### MBTI분류모델
