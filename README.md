@@ -9,7 +9,7 @@ BERT기반 한국어 언어모델인 Kcbert를 활용하여 사용자의 채팅 
 
 <div align=center><h1>📚 OUR STACKS</h1></div>
 ### ✔️programming env & tool
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/vScode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+<br><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/vScode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"></br>
 ### ✔️Frond-end
 <img src="https://img.shields.io/badge/fastAPI-009688?style=for-the-badge&logo=fastAPI&logoColor=white">
 ### ✔️Back-end
@@ -20,18 +20,12 @@ BERT기반 한국어 언어모델인 Kcbert를 활용하여 사용자의 채팅 
 
 ### 1. 사용한 언어모델
 
-- KcBERT
+- KcBERT<br/>
 Kcbert는 Korean comments BERT의 줄임말로 한국어 댓글을 이용하여 학습한 BERT 모델입니다.
-해당 모델은 2019.01.01 ~ 2020.06.15 사이에 작성된 뉴스 기사들의 댓글과 대댓글을 수집한 데이터 셋을 통해 학습되었습니다.
-@inproceedings{lee2020kcbert,
-  title={KcBERT: Korean Comments BERT},
-  author={Lee, Junbum},
-  booktitle={Proceedings of the 32nd Annual Conference on Human and Cognitive Language Technology},
-  pages={437--440},
-  year={2020}
-}
+해당 모델은 2019.01.01 ~ 2020.06.15 사이에 작성된 뉴스 기사들의 댓글과 대댓글을 수집한 데이터 셋을 통해 학습되었습니다.<br/>
+[kcbert 깃허브](https://github.com/Beomi/KcBERT)
 
-- gpt-3.5-turbo
+- gpt-3.5-turbo<br/>
 ChatGPT는 OpenAI가 개발한 프로토타입 대화형 인공지능 챗봇이다.
 
 ### 2. 학습데이터
