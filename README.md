@@ -20,12 +20,12 @@
     <td align="center"><a href="https://github.com/jhs36"><b>팀원 정희상</b></td>
   </tr>
   <tr> 
-    <td align="center">프로젝트 관리, 모델 테스트 및 백엔드 작업</td>
-    <td align="center">모델구현, 테스트,서버 배포 및 프론트엔드 작성</td>
-    <td align="center">데이터 전처리, DB 관리 및 생성, ppt 작성</td>
-    <td align="center">재생성모델 구현, api관리, 프롬프트 엔지니어링</td>
-    <td align="center">모델학습 및 구현, 분류 모델 정확도 테스트</td>
-    <td align="center">데이터 전처리, DB관리, 프롬프트 엔지니어링</td>
+    <td align="center">프로젝트 관리, 모델 테스트</td>
+    <td align="center">분류 모델 구현, 모델 테스트</td>
+    <td align="center">데이터 전처리, DB 생성, 관리</td>
+    <td align="center">재생성 모델 구현, api관리</td>
+    <td align="center">분류 모델학습, 모델 테스트</td>
+    <td align="center">DB 관리, 프롬프츠 엔지니어링</td>
   </tr>
 
 </table>
