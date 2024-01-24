@@ -2,14 +2,39 @@
 # 아이즈(6조) : LLM를 이용한 MBTI 분류 및 텍스트 추천
 
 ## 팀 소개
+<table>
+ <tr>
+    <td align="center"><img src="./img_mbti/img_isfp.png" width="200px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_istj.png" width="200px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_isfj.png" width="200px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_intp.png" width="200px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_istj.png" width="200px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_istp.png" width="200px;" alt=""></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/jooniorp"><b>박준희</b></td>
+    <td align="center"><a href="https://github.com/ksc1583"><b>김성찬</b></td>
+    <td align="center"><a href="https://github.com/jjkk-story"><b>김정경</b></td>
+    <td align="center"><a href="https://github.com/TonyLee8596"><b>이동기</b></td>
+    <td align="center"><a href="https://github.com/LJMoonCode"><b>이재문</b></td>
+    <td align="center"><a href="https://github.com/jhs36"><b>정희상</b></td>
+  </tr>
+  <tr> 
+    <td align="center">팀장,프로젝트 관리</td>
+    <td align="center">모델구현 및 테스트</td>
+    <td align="center">데이터 전처리 및 DB관리</td>
+    <td align="center">모델구현 및 api관</td>
+    <td a리</td>
+  </tr>
 
+</table>
 ## 프로젝트 소개
 
 BERT기반 한국어 언어모델인 Kcbert를 활용하여 사용자의 채팅 데이터로 사용자와 상대방의 MBTI를 분류하고, ChatGPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI를 선택하면 그 MBTI말투에 맞게 문장을 재생성해줍니다.
-
+***
 <div align=center><h1>📚 OUR STACKS</h1></div>
 ### ✔️programming env & tool
-<br><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/vScode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"></br>
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/vScode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
 ### ✔️Frond-end
 <img src="https://img.shields.io/badge/fastAPI-009688?style=for-the-badge&logo=fastAPI&logoColor=white">
 ### ✔️Back-end
@@ -50,7 +75,9 @@ MBTI별 카카오톡 오픈 채팅방 채팅 데이터
 
 복잡한 검사 대신 카카오톡 대화내용을 기반으로 간단하게 상대방과 자신의 MBTI 파악하기 위함이며 대화의 상대방이 누군지에 따라 달라지는 자신의 MBTI를 확인할 수 있습니다.
 
-시연 영상넣기
+<p align="center">
+  <img src="./img_mbti/model1.gif" alt="" width="400"/>
+</p>
 *카카오톡 데이터는 대화내용 내보내기를 통해 텍스트 파일로 가져올 수 있습니다.
 
 ### 문장 재생성 모델
@@ -58,14 +85,16 @@ MBTI별 카카오톡 오픈 채팅방 채팅 데이터
 Chat GPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI를 선택하면 그 MBTI말투에 맞게 문장을 재생성해줍니다.
 예측된 상대방의 MBTI를 기반으로 대화를 원활하게 하며 더 나은 소통을 위함입니다.
 
-시연 영상넣기
+<p align="center">
+  <img src="./img_mbti/model2.gif" alt="" width="400"/>
+</p>
 
 ## 디렉토리
 
 [Model training & fine tuning](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/kc_bert_large.py) : Kcbert모델을 MBTI가 태깅된 데이터로 학습 및 파인튜닝<br/>
 [app.py](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/app.py) : 모델1,2 통합 웹 서비스 코드<br/>
 [textfile_to_dict_30](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/textfile_to_dict_30.py) : 사용자가 업로드한 채팅 텍스트 파일 처리 코드<br/>
-[save to mongo](딕셔너리 주소)](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/save_to_mongodb.py) : 입력된 텍스트 데이터를 DB에 저장하는 코드<br/>
+[save to mongo](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/save_to_mongodb.py) : 입력된 텍스트 데이터를 DB에 저장하는 코드<br/>
 [read dataset](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/read_last_dataset_db_to_csv.py) : 모델에 재학습 시킬 데이터를 가져오는 코드<br/>
 [update model](https://github.com/ksc1583/Programmers-AI-6-5/blob/9e9bebc5e49c50711e7670589b30e2e4a688ba84/update_model.py) : 새로운 데이터로 모델 파라미터 업데이트 하는 코드<br/>
 [Data preprocessing](https://github.com/ksc1583/Programmers-AI-6-5/tree/9e9bebc5e49c50711e7670589b30e2e4a688ba84/data_preprocessing) : 데이터 전처리 코드 폴더<br/>
@@ -75,5 +104,9 @@ Chat GPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI
 
 
 ## 한계점 및 향후 해결방안
-
-Kcbert모델을 파인튜닝함에 있어 MBTI가 제대로 라벨링된 대화 형식의 데이터셋을 구하기 어려워 초기 모델에 대한 정확도가 조금 떨어질 수 있으나,<br/> 모델 파라미터를 주기적으로 업데이트 하는 코드를 작성하여 구현함으로 채팅데이터가 점점 쌓이면 더 정확한 분류를 할 수 있음이 기대됨
+1. 데이터셋의 한계<br/>
+MBTI가 제대로 라벨링된 대화 형식의 데이터셋이 없으며<br/>
+MBTI가 라벨링된 데이터는 일반적인 소재의 대화 내용이 아닌 MBTI와 관련된 대화 내용이다<br/>
+따라서 Kcbert모델을 파인튜닝하고 학습하는 데에 있어 16가지의 MBTI를 분류하거나 정확도를 측정하기에 데이터가 적고 부정확하다<br/>
+<br/>
+하지만, 모델 파라미터를 주기적으로 업데이트 하는 코드를 작성하여 구현함으로 채팅데이터가 점점 쌓이면 더 정확한 분류를 할 수 있음이 기대됨
