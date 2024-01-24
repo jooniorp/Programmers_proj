@@ -6,6 +6,8 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AdamW
 import pymongo
 from pymongo import MongoClient
+import os
+from dotenv import load_dotenv
 import schedule
 import time
 from datetime import datetime, timedelta
@@ -94,12 +96,18 @@ def check_label_pj(label):
   else:
     return 1
 
+load_dotenv()
+
+Mongo_uri=os.getenv('Mongo_uri')
+Mongo_db=os.getenv('Mongo_db')
+Mongo_new_collection=os.getenv('Mongo_new_collection')
+Mongo_old_collection=os.getenv('Mongo_old_collection')
 # MongoDB 연결
 def connect_to_mongodb():
-    client = MongoClient("mongodb://ies:6b5@localhost:27017/")
-    db = client["input_database"]
-    collection1 = db["user_chat"]
-    collection2 = db['dataset_collection']
+    client = MongoClient(Mongo_uri)
+    db = client[Mongo_db]
+    collection1 = db[Mongo_new_collection]
+    collection2 = db[Mongo_old_collection]
     return collection1, collection2
 
 # MongoDB에서 데이터 가져오기-수정필요
