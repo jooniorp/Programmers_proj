@@ -20,7 +20,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐할거야?", "rewritten": "주말에 뭐 함?"},
             {"original": "이번 주말에 뭐하실건가요?", "rewritten": "주말에 뭐하세요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "과제 다 함?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "다 옴"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "다 옴"},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다."},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네."}
         ]
     },
     "INTJ": {
@@ -31,7 +33,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐할거야?", "rewritten": "주말에 하는거라도?"},
             {"original": "이번 주말에 뭐하실건가요?", "rewritten": "주말에 할 거 있으세요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "어제 과제 다 했나?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "다 왔다"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "다 왔다"},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다."},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네."}
         ]
     },
     "INFP": {
@@ -42,7 +46,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "혹시 주말에 뭐하니?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "혹시 주말에 뭐하시나요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "그... 어제 과제는 다 했니?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "다 왔는데..."}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "다 왔는데..."},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "INFJ": {
@@ -53,7 +59,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐해?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐하세요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "어제 과제 다 했어? ㅎㅎ"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "다 왔어~"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "다 왔어~"},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "ISTP": {
@@ -64,7 +72,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐해?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐해요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "어제 과제 다 함?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "너네 집 다 왔음"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "너네 집 다 왔음"},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다."},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네."}
         ]
     },
     "ISTJ": {
@@ -75,7 +85,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "이번 주말에 뭐할 예정이지?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "이번 주말에 뭐하실 생각인가요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "어제 과제 다 했나?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "너네 집 다 왔다."}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "너네 집 다 왔다."},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다."},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네."}
         ]
     },
     "ISFP": {
@@ -86,7 +98,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "저... 주말에 뭐 해?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "저기 주말에 뭐하시나요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "그... 어제 과제 다 했어?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 다 왔는데..."}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 다 왔는데..."},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "ISFJ": {
@@ -97,7 +111,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "혹시 주말에 뭐 하는거 있니?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "혹시 주말에 뭐 하는거 있으세요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "너 어제 과제 다 했어? ㅎㅎ"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "너네 집 다 왔엉~~"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "너네 집 다 왔엉~~"},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "ENTP": {
@@ -108,7 +124,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐하냐?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐하세요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "너 어제 과제 다 했냐?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "야! 나 다 왔다!"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "야! 나 다 왔다!"},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다 ㅠㅠ"},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? ㅠㅠ 집가서 빨리 쉬어야겠네."}
         ]
     },
     "ENTJ": {
@@ -119,7 +137,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 하는거라도 있나?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐 하시는거라도?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "근데 너 저 어제 과제는 다 했니?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 거의 도착했다."}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 거의 도착했다."},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다 ㅠㅠ"},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? ㅠㅠ 집가서 빨리 쉬어야겠네."}
         ]
     },
     "ENFP": {
@@ -130,7 +150,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "너 주말에 뭐해? ㅋㅋ"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐하세요? ㅋㅋ"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "너 어제 과제 다 했엉? ㅎㅎ"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 다 왔담! ㅋㅋ"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 다 왔담! ㅋㅋ"},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "ENFJ": {
@@ -141,7 +163,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "너 주말에 뭐 할거 있니?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 할거 있으신가요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "근데 너 어제 과제는 다 했니? ㅋㅋ"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 거의 다 왔어~ ㅋㅋ"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 거의 다 왔어~ ㅋㅋ"},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "ESTP": {
@@ -152,7 +176,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 하냐?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐 해요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "야 너 어제 과제 다 했냐?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "야! 나 너네 집 거의 다 왔다!"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "야! 나 너네 집 거의 다 왔다!"},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다 ㅠㅠ"},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? ㅠㅠ 집가서 빨리 쉬어야겠네."}
         ]
     },
     "ESTJ": {
@@ -163,7 +189,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "주말에 뭐 하나?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 뭐 하는거라도 있나?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "근데 너 어제 과제는 다 했냐?"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 다 왔다."}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 다 왔다."},
+            {"original": "아프다고? 헐 괜찮아? ㅠㅠ", "rewritten":  "아프다고? 빨리 병원 가야겠다 ㅠㅠ"},
+            {"original": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!", "rewritten": "오늘 회사 힘들었어? ㅠㅠ 집가서 빨리 쉬어야겠네."}
         ]
     },
     "ESFP": {
@@ -174,7 +202,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "너 주말에 약속 있니? 없으면 나랑 놀래?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "주말에 약속 있으세요? 없으면 저랑 놀래요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "근데 너 어제 과제 다 했엉? ㅎㅎ"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 거의 다 왔엉~ ㅋㅋㅋ"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 거의 다 왔엉~ ㅋㅋㅋ"},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     },
     "ESFJ": {
@@ -185,7 +215,9 @@ mbti_descriptions = {
             {"original": "이번 주말에 뭐 할거야?", "rewritten": "너 주말에 약속 있니? 없으면 나랑 놀러 갈래?"},
             {"original": "이번 주말에 뭐 하실건가요?", "rewritten": "혹시 주말에 약속 있으세요? 없으면 저랑 놀러 갈래요?"},
             {"original": "너 어제 과제 다 했음?", "rewritten": "근데 너 어제 과제 다 했어? ㅎㅎ"},
-            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 거의 다 왔어~ ㅋㅋㅋ"}
+            {"original": "너네 집 거의 다 왔음", "rewritten": "나 너네 집 거의 다 왔어~ ㅋㅋㅋ"},
+            {"original": "아프다고? 빨리 병원 가야겠다.", "rewritten": "아프다고? 헐 괜찮아? ㅠㅠ"},
+            {"original": "오늘 회사 힘들었어? 집가서 빨리 쉬어야겠네.", "rewritten": "회사에서 무슨 일 있었어? 다 괜찮아질거야!!"}
         ]
     }
     # 다른 MBTI 유형에 대한 설명을 여기에 추가하세요.
