@@ -7,13 +7,13 @@
 
 BERT기반 한국어 언어모델인 Kcbert를 활용하여 사용자의 채팅 데이터로 사용자와 상대방의 MBTI를 분류하고, ChatGPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI를 선택하면 그 MBTI말투에 맞게 문장을 재생성해줍니다.
 
-<div align=center><h1>📚 OUR STACKS</h1></div>  <div align=center>
+<div align=center><h1>📚 OUR STACKS</h1></div>
 ### ✔️programming env & tool
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-#F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/visualstudiocode-#007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
 ### ✔️Frond-end
-<img src="https://img.shields.io/badge/fastAPI-#009688?style=for-the-badge&logo=fastAPI&logoColor=white">
+<img src="https://img.shields.io/badge/fastAPI-009688?style=for-the-badge&logo=fastAPI&logoColor=white">
 ### ✔️Back-end
-<img src="https://img.shields.io/badge/flask-#000000?style=for-the-badge&logo=flask&logoColor=white"><img src="https://img.shields.io/badge/amazonec2-#FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"><img src="https://img.shields.io/badge/mongodb-#47A248?style=for-the-badge&logo=mongodb&logoColor=white">
+<img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white"><img src="https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"><img src="https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
 
   
 ## 모델 학습
