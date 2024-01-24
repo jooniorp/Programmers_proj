@@ -21,10 +21,11 @@
   </tr>
   <tr> 
     <td align="center">팀장,프로젝트 관리</td>
-    <td align="center">모델구현 및 테스트</td>
-    <td align="center">데이터 전처리 및 DB관리</td>
-    <td align="center">모델구현 및 api관</td>
-    <td a리</td>
+    <td align="center">모델구현, 테스트</td>
+    <td align="center">데이터 전처리, DB관리</td>
+    <td align="center">모델구현, api관리</td>
+    <td align="center">모델구현,  테스트</td>
+    <td align="center">DB관리, 프롬프트 엔지니어링</td>
   </tr>
 
 </table>
@@ -34,11 +35,11 @@
 BERT기반 한국어 언어모델인 Kcbert를 활용하여 사용자의 채팅 데이터로 사용자와 상대방의 MBTI를 분류하고, ChatGPT api를 활용하여 사용자가 문장을 작성하고, 원하는 MBTI를 선택하면 그 MBTI말투에 맞게 문장을 재생성해줍니다.
 ***
 <div align=center><h1>📚 OUR STACKS</h1></div>
-### ✔️programming env & tool
+✔️programming env & tool
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"><img src="https://img.shields.io/badge/vScode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"><img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
-### ✔️Frond-end
+✔️Frond-end
 <img src="https://img.shields.io/badge/fastAPI-009688?style=for-the-badge&logo=fastAPI&logoColor=white">
-### ✔️Back-end
+✔️Back-end
 <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white"><img src="https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"><img src="https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
 
   
@@ -56,12 +57,12 @@ ChatGPT는 OpenAI가 개발한 프로토타입 대화형 인공지능 챗봇이�
 
 ### 2. 학습데이터
 
-네이버 MBTI 심리 카페 특정 게시판 (사랑방 게시판, 신변 잡기 게시판) 의 게시글 중 닉네임으로부터 MBTI를 유추할 수 있는 데이터<br/> https://github.com/dev-jaemin/Korean-MBTI-Conversation-Dataset?tab=readme-ov-file<br/>8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, 이모지 제거, null 제거, 중복값 제거
+- 네이버 MBTI 심리 카페 특정 게시판 (사랑방 게시판, 신변 잡기 게시판) 의 게시글 중 닉네임으로부터 MBTI를 유추할 수 있는 데이터<br/> https://github.com/dev-jaemin/Korean-MBTI-Conversation-Dataset?tab=readme-ov-file<br/>8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, 이모지 제거, null 제거, 중복값 제거
 
-유튜브 MBTI 인사이드 <br/>EP.1 ~ EP.6 MBTI가 다른 16명의 사람들이 4박 5일동안 한 공간에서 생활하는 프로그램 스크립트 데이터 <br/>https://www.youtube.com/watch?v=VxnvTBH8yg4
+- 유튜브 MBTI 인사이드 <br/>EP.1 ~ EP.6 MBTI가 다른 16명의 사람들이 4박 5일동안 한 공간에서 생활하는 프로그램 스크립트 데이터 <br/>https://www.youtube.com/watch?v=VxnvTBH8yg4
 <br/>8~512자 사이의 데이터만 추출, 맞춤법 검사 및 띄어쓰기 수정, null 제거, 중복값 제거
 
-MBTI별 카카오톡 오픈 채팅방 채팅 데이터
+- MBTI별 카카오톡 오픈 채팅방 채팅 데이터
 8~512자 사이의 데이터만 추출, null 제거, 중복값 제거
 
 ## 모델 구현
