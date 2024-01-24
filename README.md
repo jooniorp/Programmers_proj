@@ -4,12 +4,12 @@
 ## 팀 소개
 <table>
  <tr>
-    <td align="center"><img src="./img_mbti/img_isfp.png" width="200px;" alt=""></td>
-    <td align="center"><img src="./img_mbti/img_istj.png" width="200px;" alt=""></td>
-    <td align="center"><img src="./img_mbti/img_isfj.png" width="200px;" alt=""></td>
-    <td align="center"><img src="./img_mbti/img_intp.png" width="200px;" alt=""></td>
-    <td align="center"><img src="./img_mbti/img_istj.png" width="200px;" alt=""></td>
-    <td align="center"><img src="./img_mbti/img_istp.png" width="200px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_isfp.png" width="180px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_istj.png" width="180px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_isfj.png" width="180px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_intp.png" width="180px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_istj.png" width="180px;" alt=""></td>
+    <td align="center"><img src="./img_mbti/img_istp.png" width="180px;" alt=""></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/jooniorp"><b>박준희</b></td>
