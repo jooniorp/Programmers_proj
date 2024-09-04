@@ -26,7 +26,7 @@ TEMPLATE = '''
 '''
 
 # OpenAI API 키 설정
-openai.api_key = "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"
+openai.api_key = "your_api_key"
 
 @app.route('/', methods=['GET', 'POST'])
 def mbti_converter():
